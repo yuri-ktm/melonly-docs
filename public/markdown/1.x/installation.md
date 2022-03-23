@@ -1,11 +1,12 @@
 <!-- omit in toc -->
 # Installation
 
+- [Getting Started](#getting-started)
 - [Requirements](#requirements)
 - [Creating Project](#creating-project)
 - [Running Application](#running-application)
 
-<br>
+## Getting Started
 
 % To create new Melonly project you can use the CLI installer. You only have to install `@melonly/cli` package:
 

@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="fixed left-0 top-0 flex justify-between items-center bg-white dark:bg-gray-900 w-full h-20 px-4 md:px-28 shadow-md shadow-slate-500/10 dark:shadow-none z-20">
+    <nav class="fixed left-0 top-0 flex justify-between items-center bg-white dark:bg-gray-900 w-full h-16 px-4 md:px-28 shadow-md shadow-slate-500/10 dark:shadow-none z-20">
       <RouterLink class="flex items-center" to="/">
         <img class="w-8" src="/logo.png" alt="Logo">
 
@@ -37,7 +37,7 @@
     </nav>
   </header>
 
-  <main class="flex flex-col justify-center items-start overflow-auto mt-20">
+  <main class="flex flex-col justify-center items-start overflow-auto mt-16">
     <RouterView />
   </main>
 </template>

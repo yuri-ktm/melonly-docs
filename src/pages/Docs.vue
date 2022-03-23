@@ -1,12 +1,12 @@
 <template>
   <section class="flex flex-col items-center w-full p-6 md:py-20 md:px-48">
     <nav
-      class="fixed right-3 top-20 md:left-6 md:right-unset md:top-20 md:visible flex flex-col w-80 h-full md:4/5 overflow-auto bg-slate-100 dark:bg-gray-800 rounded-lg md:rounded-none shadow-xl md:shadow-none px-10 py-8 z-20"
+      class="fixed right-3 top-16 md:left-0 md:right-unset md:visible flex flex-col w-80 h-full md:4/5 overflow-auto bg-slate-100 dark:bg-gray-800/80 rounded-lg md:rounded-none shadow-xl md:shadow-none px-10 py-8 z-20"
       :class="{ 'visible': showMenu, 'invisible': !showMenu }"
       @click="showMenu = false"
     >
       <RouterLink
-        class="relative md:px-2 md:py-1 my-1 opacity-70 hover:opacity-95 transition-transform duration-300 hover:translate-x-1 outline-none rounded-lg focus-visible:ring-2 ring-emerald-400"
+        class="relative md:px-2 md:py-1 my-1 opacity-80 hover:opacity-95 transition-transform duration-300 hover:translate-x-1 outline-none rounded-lg focus-visible:ring-2 ring-emerald-400"
         :class="{ 'before:bg-emerald-500 before:w-1 before:h-4 before:absolute before:-left-3 md:before:-left-2 before:top-2 md:before:top-3 before:block before:rounded-md opacity-95': $route.path.includes(`/${kebabCase(item)}`) }"
         v-for="(item, index) in menuItems"
         :to="kebabCase(item)"

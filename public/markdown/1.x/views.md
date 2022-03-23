@@ -11,21 +11,27 @@
 
 % Melonly's template engine allows you to create loops, conditionals and variable interpolation.
 
-% The example template with foreach loop and conditional rendering looks like this:
+% The example template with conditional rendering block looks like this:
 
 ```
 &lt;h1&gt;{{ title }}&lt;/h1&gt;
 
+&lt;menu&gt;
+    [if logged]
+        &lt;a href="/logout"&gt;Log out&lt;/a&gt;
+    [/if]
+&lt;/menu&gt;
+```
+
+% All directives like foreach loops use the square brackets and slash syntax:
+
+```
 [each item in [1, 2, 3]]
     &lt;div&gt;{{ item }}&lt;/div&gt;
 [/each]
-
-[if logged]
-    &lt;a href="/logout"&gt;Log out&lt;/a&gt;
-[/if]
 ```
 
-% All directives like conditional blocks and loops use the square brackets and slash syntax. For displaying passed variables use `{{ variable }}` syntax. Variables are automatically escaped from HTML to prevent XSS attacks.
+% For displaying passed variables use `{{ variable }}` syntax. Variables are automatically escaped from HTML to prevent XSS attacks.
 
 % Some frontend frameworks like Vue use the same bracket syntax for displaying data. To render raw brackets put `@` sign before them:
 
