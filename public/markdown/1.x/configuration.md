@@ -3,6 +3,7 @@
 
 - [Introduction](#introduction)
 - [Obtaining Variables](#obtaining-variables)
+- [Example `.env` File](#example-env-file)
 
 ## Introduction
 
@@ -34,3 +35,7 @@ MAIL_PASSWORD=
 ```
 console.log(process.env.DB_HOST)
 ```
+
+## Example `.env` File
+
+Developers often use version control systems to work together. We should remember not to store any files like `.env` in repositories for security reasons (it contains database passwords and things like that). That's why we should exclude these files from version control and only publish an example `.env.example` file synced with the original one.
