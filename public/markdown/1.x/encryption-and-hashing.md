@@ -1,11 +1,12 @@
 <!-- omit in toc -->
 # Encryption and Hashing
 
+- [Introduction](#introduction)
 - [Configuration](#configuration)
 - [Encryption and Decryption](#encryption-and-decryption)
 - [Hashing](#hashing)
 
-<br>
+## Introduction
 
 % Secure web apps require good encryption and hashing algorithms. Melonly provides a simple two-way encryption interface.
 

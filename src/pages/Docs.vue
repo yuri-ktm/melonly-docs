@@ -5,6 +5,17 @@
       :class="{ 'visible': showMenu, 'invisible': !showMenu }"
       @click="showMenu = false"
     >
+      <div class="mb-6">
+        <span class="text-sm mr-3">Version</span>
+
+        <BaseSelect
+          :options="{
+            '1.x': '1.x',
+          }"
+          :defaultOption="DEFAULT_VERSION"
+        />
+      </div>
+
       <RouterLink
         class="relative md:px-2 md:py-1 my-1 opacity-80 hover:opacity-95 transition-transform duration-300 hover:translate-x-1 outline-none rounded-lg focus-visible:ring-2 ring-emerald-400"
         :class="{ 'before:bg-emerald-500 before:w-1 before:h-4 before:absolute before:-left-3 md:before:-left-2 before:top-2 md:before:top-3 before:block before:rounded-md opacity-95': $route.path.includes(`/${kebabCase(item)}`) }"
@@ -36,6 +47,7 @@
   import { usePageTitle } from '../composables/usePageTitle'
   import { parseMarkdown } from '../util/parseMarkdown'
   import { kebabCase } from '../util/kebabCase'
+  import { DEFAULT_VERSION } from '../util/constants'
   import axios from 'axios'
 
   const menuItems = [

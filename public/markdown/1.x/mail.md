@@ -1,11 +1,12 @@
 <!-- omit in toc -->
 # Mail
 
+- [Introduction](#introduction)
 - [Configuration](#configuration)
 - [Sending Text Emails](#sending-text-emails)
 - [Email Classes](#email-classes)
 
-<br>
+## Introduction
 
 % Melonly provides a fluent interface for sending emails from your application. We provide two ways for managing emails with classes.
 
@@ -43,13 +44,13 @@ Email.send('recipient@mail.com', 'Test Email', 'This is the test email sent from
 import { Email } from '@melonly/core'
 
 export class WelcomeEmail extends Email {
-    public subject(): string {
-        return 'Welcome'
-    }
+  public subject(): string {
+    return 'Welcome'
+  }
 
-    public build(): string {
-        return this.fromTemplate('mail.welcome')
-    }
+  public build(): string {
+    return this.fromTemplate('mail.welcome')
+  }
 }
 ```
 

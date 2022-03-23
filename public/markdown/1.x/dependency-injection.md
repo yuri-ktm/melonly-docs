@@ -1,10 +1,11 @@
 <!-- omit in toc -->
 # Dependency Injection
 
+- [Introduction](#introduction)
 - [Class Bindings](#class-bindings)
 - [Singletons](#singletons)
 
-<br>
+## Introduction
 
 % Backend applications often use object-oriented programming to manage the codebase. Melonly utilizes common *service container* and *dependency injection* patterns.
 
@@ -25,7 +26,7 @@ import { Injectable } from '@melonly/core'
 
 @Injectable()
 export class PostService {
-    ...
+  ...
 }
 ```
 
@@ -34,8 +35,8 @@ import { PostService } from './post.service'
 
 @Injectable()
 export class OtherService {
-    constructor(private postService: PostService) {}
-    ...
+  constructor(private postService: PostService) {}
+  ...
 }
 ```
 
@@ -49,6 +50,6 @@ Normally hinted dependencies are resolved independently each time they are neede
 
 ```
 app.bindSingletons([
-    MyClass,
+  MyClass,
 ])
 ```

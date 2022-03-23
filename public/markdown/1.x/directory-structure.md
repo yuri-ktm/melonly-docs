@@ -1,6 +1,7 @@
 <!-- omit in toc -->
 # Directory Structure
 
+- [Introduction](#introduction)
 - [`/database`](#database)
 - [`/public`](#public)
 - [`/src`](#src)
@@ -8,13 +9,13 @@
 - [`/tests`](#tests)
 - [`/views`](#views)
 
-<br>
+## Introduction
 
 % Default Melonly application structure consists of several main folders containing source code. It's a good idea to explore them!
 
 ## `/database`
 
-% In this directory database migrations are created. You may also store SQLite database there.
+% In this directory database migrations are created by default. You may also store SQLite database there if you feel it convinient.
 
 ## `/public`
 
@@ -26,12 +27,12 @@
 
 ## `/storage`
 
-% In `/storage` directory are stored things like cache and temporary files. TypeScript code is compiled into `dist` directory inside this folder. You don't need to modify anything there.
+% In this directory things like cache and temporary files are stored. Application TypeScript code is compiled inside this directory. You don't need to modify anything there.
 
 ## `/tests`
 
-% This directory stores your unit tests (test files end with `.test.ts` extension).
+% This directory stores your [unit tests](/docs/1.x/testing) (test files end with `.test.ts` extension).
 
 ## `/views`
 
-% The `views` directory contains app views rendered by your application. View files have the `.melon.html` extension.
+% The `views` directory contains app [views](/docs/1.x/views) rendered by your application. View files have the `.melon.html` extension.

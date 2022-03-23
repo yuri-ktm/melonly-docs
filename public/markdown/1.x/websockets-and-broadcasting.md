@@ -1,10 +1,11 @@
 <!-- omit in toc -->
 # Websockets and Broadcasting
 
+- [Introduction](#introduction)
 - [Broadcast Channels](#broadcast-channels)
 - [Emitting Events](#emitting-events)
 
-<br>
+## Introduction
 
 % Modern applications often require established two-way server connection for real-time data updating. The best option is to use Websocket connections. Melonly provides a powerful API for managing these features.
 
@@ -23,9 +24,9 @@ import { BroadcastChannel, ChannelInterface } from '@melonly/core'
 
 @BroadcastChannel('chat/:id')
 export class ChatChannel implements ChannelInterface {
-    public userAuthorized(): boolean {
-        return true
-    }
+  public userAuthorized(): boolean {
+    return true
+  }
 }
 ```
 

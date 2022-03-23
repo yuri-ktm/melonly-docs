@@ -1,9 +1,10 @@
 <!-- omit in toc -->
 # Command Line Interface
 
+- [Introduction](#introduction)
 - [Useful Commands](#useful-commands)
 
-<br>
+## Introduction
 
 Melonly ships with the [official CLI](https://github.com/Doc077/melonly-cli) - a powerful terminal tool which makes it easy to create and manage your application files. If you don't have it installed yet, use the `npm` command:
 

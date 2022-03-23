@@ -24,9 +24,9 @@ import { Injectable } from '@melonly/core'
 
 @Injectable()
 export class UserService {
-    public getMessage(): string {
-        return 'Hello World!'
-    }
+  public getMessage(): string {
+    return 'Hello World!'
+  }
 }
 ```
 
@@ -39,8 +39,8 @@ import { UserService } from './user.service'
 
 @Controller()
 export class UserController {
-    constructor(private userService: UserService) {}
-    ...
+  constructor(private userService: UserService) {}
+  ...
 }
 ```
 
@@ -49,6 +49,6 @@ export class UserController {
 ```
 @Get('/users')
 public index(): string {
-    return this.userService.getMessage()
+  return this.userService.getMessage()
 }
 ```

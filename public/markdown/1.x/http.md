@@ -1,12 +1,13 @@
 <!-- omit in toc -->
 # HTTP
 
+- [Introduction](#introduction)
 - [Requests and Responses](#requests-and-responses)
 - [Form Input Data](#form-input-data)
 - [Redirects](#redirects)
 - [Headers](#headers)
 
-<br>
+## Introduction
 
 Melonly provides a fluent API for dealing with web requests and responses which are respresented as objects.
 

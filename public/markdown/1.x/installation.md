@@ -23,12 +23,13 @@
 
 ## Creating Project
 
-% After installing, you can check the Melonly CLI version if it has been properly installed. Then you'll be able to run `melon` commands:
+% After installing, you can check the Melonly CLI version if it has been properly installed:
 
 ```
 <span class="select-none mr-2">$</span>melon -v
 ```
 
+% Then you'll be able to run `melon` commands.
 % To create new project run the `new` command in your directory:
 
 ```

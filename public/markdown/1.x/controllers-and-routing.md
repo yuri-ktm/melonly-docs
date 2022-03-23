@@ -1,26 +1,27 @@
 <!-- omit in toc -->
 # Controllers and Routing
 
+- [Introduction](#introduction)
 - [Main Application File](#main-application-file)
-- [Routes](#routes)
+- [Route Patterns](#route-patterns)
 
-<br>
+## Introduction
 
-% Now we can develop our application. Every web app should have *routes* - URLs with some assigned action. Routing system in Melonly is based on controller classes. Framework already ships with one controller in `src/app/app.controller.ts` file by default:
+% Most of web applications follow a concept of *routes* - URLs with some assigned action. Routing system in Melonly is based on controller classes. Framework already ships with one controller in `src/app/app.controller.ts` file by default:
 
 ```
 import { Controller, Get, Request, Response, ViewResponse } from '@melonly/core'
 
 @Controller()
 export class AppController {
-    constructor(private request: Request, private response: Response) {}
+  constructor(private request: Request, private response: Response) {}
 
-    @Get('/')
-    public index(): ViewResponse {
-        return this.response.render('home', {
-            message: 'Hello World',
-        })
-    }
+  @Get('/')
+  public index(): ViewResponse {
+    return this.response.render('home', {
+      message: 'Hello World',
+    })
+  }
 }
 ```
 
@@ -41,13 +42,13 @@ You may create controllers with CLI:
 
 ```
 app.registerControllers([
-    AppController,
-    // Other controllers...
+  AppController,
+  // Other controllers registration...
 ])
 ```
 
 
-## Routes
+## Route Patterns
 
 % Route patterns can be also dynamic. Just use `:paramName` syntax:
 

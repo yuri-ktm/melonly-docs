@@ -17,9 +17,9 @@
 &lt;h1&gt;{{ title }}&lt;/h1&gt;
 
 &lt;menu&gt;
-    [if logged]
-        &lt;a href="/logout"&gt;Log out&lt;/a&gt;
-    [/if]
+  [if logged]
+    &lt;a href="/logout"&gt;Log out&lt;/a&gt;
+  [/if]
 &lt;/menu&gt;
 ```
 
@@ -27,7 +27,7 @@
 
 ```
 [each item in [1, 2, 3]]
-    &lt;div&gt;{{ item }}&lt;/div&gt;
+  &lt;div&gt;{{ item }}&lt;/div&gt;
 [/each]
 ```
 
