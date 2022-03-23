@@ -1,11 +1,13 @@
 <template>
   <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-12rem)] p-6 md:py-32 md:px-48">
-    <h1 class="text-4xl font-medium md:text-5xl mb-10">The <span class="text-emerald-500 dark:text-emerald-400">modern</span> Node.js framework</h1>
+    <h1 class="text-4xl font-medium md:text-5xl mb-10">
+      The <span class="text-emerald-500 dark:text-emerald-400">modern</span> Node.js framework
+    </h1>
 
-    <div class="mb-28">
+    <div class="mb-20 md:mb-28">
       <RouterLink
-        class="bg-emerald-500 inline-block cursor-pointer text-base px-6 py-3 rounded-xl text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-2 select-none shadow-lg shadow-emerald-500/20 outline-none focus:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-gray-900 focus:ring-emerald-400"
-        to="/docs/1.x/installation"
+        class="bg-emerald-500 inline-block cursor-pointer text-base px-4 md:px-6 py-3 rounded-xl text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-2 select-none shadow-lg shadow-emerald-500/20 outline-none focus:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-gray-900 focus:ring-emerald-400"
+        :to="`/docs/${DEFAULT_VERSION}/installation`"
       >
         Installation
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -14,8 +16,8 @@
       </RouterLink>
 
       <RouterLink
-        class="bg-slate-100 inline-block cursor-pointer text-base px-6 py-3 rounded-xl text-gray-500 transition-all duration-300 hover:opacity-90 hover:-translate-y-2 select-none ml-2 dark:bg-gray-800 dark:text-gray-50 outline-none focus:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-gray-900 focus:ring-emerald-400"
-        to="/docs/1.x/installation"
+        class="bg-slate-100 inline-block cursor-pointer text-base px-4 md:px-6 py-3 rounded-xl text-gray-500 transition-all duration-300 hover:opacity-90 hover:-translate-y-2 select-none ml-2 dark:bg-gray-800 dark:text-gray-50 outline-none focus:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-gray-900 focus:ring-emerald-400"
+        to="/docs"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
         Documentation
@@ -30,9 +32,9 @@
 
     <p class="opacity-90 text-lg mb-10">Melonly focuses on elegant and simple syntax which scales well in larger projects.</p>
 
-    <pre class="prettyprint bg-gray-800 text-gray-50 text-sm leading-8 whitespace-pre overflow-hidden rounded-xl shadow-lg px-7 py-5 dark:bg-gray-900">@Get('/')
+    <pre class="prettyprint bg-gray-800 text-gray-50 text-sm leading-8 whitespace-pre overflow-x-auto w-full md:w-auto rounded-xl shadow-lg px-7 py-5 dark:bg-gray-900">@Get('/')
 public index(): ViewResponse {
-    return this.response.render('home', { message: 'Hello World' })
+  return this.response.render('home', { message: 'Hello World' })
 }
 </pre>
   </section>
@@ -52,3 +54,7 @@ public index(): ViewResponse {
     <p class="opacity-80">Licensed under <a class="text-emerald-400" href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
   </section>
 </template>
+
+<script setup>
+  import { DEFAULT_VERSION } from '../util/constants'
+</script>

@@ -15,7 +15,7 @@
           :class="{
             'before:bg-emerald-500 before:w-4 before:h-1 before:absolute before:left-6 before:top-8 before:block before:rounded-md bg-slate-100 dark:bg-gray-800': $route.path.includes('docs')
           }"
-          to="/docs/1.x/installation"
+          to="/docs"
         >
           Docs
         </RouterLink>

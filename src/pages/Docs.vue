@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col items-center w-full p-6 md:py-20 md:px-48">
     <nav
-      class="fixed right-3 top-16 md:left-0 md:right-unset md:visible flex flex-col w-80 h-full md:4/5 overflow-auto bg-slate-100 dark:bg-gray-800/80 rounded-lg md:rounded-none shadow-xl md:shadow-none px-10 py-8 z-20"
+      class="fixed right-3 top-16 md:left-0 md:right-unset md:visible flex flex-col w-80 h-full md:4/5 overflow-auto bg-slate-100 dark:bg-gray-800 md:dark:bg-gray-800/80 rounded-lg md:rounded-none shadow-xl md:shadow-none px-10 py-8 z-20"
       :class="{ 'visible': showMenu, 'invisible': !showMenu }"
       @click="showMenu = false"
     >
@@ -15,7 +15,7 @@
     </nav>
 
     <svg
-      class="fixed right-6 top-24 h-6 w-6 z-20 md:hidden"
+      class="fixed right-6 top-20 h-6 w-6 z-20 md:hidden"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
