@@ -1,3 +1,3 @@
 export const usePageTitle = (title) => {
-    document.title = `${title} • Melonly.js`
+  document.title = `${title} • Melonly.js`
 }
