@@ -6,6 +6,7 @@
 - [Form Input Data](#form-input-data)
 - [Redirects](#redirects)
 - [Headers](#headers)
+- [Cookies](#cookies)
 
 ## Introduction
 
@@ -27,9 +28,9 @@ constructor(private request: Request, private response: Response) {}
 ```
 @Get('/users/:id')
 public show(): string {
-    const { id } = this.request.params
+  const { id } = this.request.params
 
-    return `User id: ${id}`
+  return `User id: ${id}`
 }
 ```
 
@@ -50,11 +51,11 @@ import { Post } from '@melonly/core'
 
 @Post('/users')
 public create(): RedirectResponse {
-    const { username, password } = this.request.data
+  const { username, password } = this.request.data
 
-    this.userService.saveToDatabase(username, password)
+  this.userService.saveToDatabase(username, password)
 
-    // ...
+  // ...
 }
 ```
 
@@ -80,7 +81,7 @@ import { RedirectResponse } from '@melonly/core'
 
 @Get('/')
 public index(): RedirectResponse {
-    return this.response.redirect('/login')
+  return this.response.redirect('/login')
 }
 ```
 
@@ -91,4 +92,12 @@ public index(): RedirectResponse {
 
 ```
 this.response.header('X-Custom-Header', 'content')
+```
+
+## Cookies
+
+You may want to get cookies sent by the user. Framework makes is super easy:
+
+```
+const { sessionId } = this.request.cookies
 ```
