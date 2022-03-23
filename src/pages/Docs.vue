@@ -37,7 +37,20 @@
       <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
     </svg>
 
-    <section class="w-full md:w-1/2" v-html="parseMarkdown(markdown)"></section>
+    <section class="w-full md:w-1/2">
+      <div v-html="parseMarkdown(markdown)"></div>
+
+      <footer class="flex flex-col justify-center items-center w-full h-56 bg-slate-100 dark:bg-gray-800/80 rounded-lg p-6 mt-32">
+        <p class="opacity-80 mb-2">Copyright © 2022 Dominik Rajkowski</p>
+
+        <p class="opacity-80">Melonly.js open-source framework is licensed under <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
+        <p class="opacity-80">Melonly logo created by <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://www.flaticon.com/free-icons/watermelon" target="_blank">Freepik - Flaticon</a></p>
+
+        <p class="opacity-80 mt-2">
+          <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly" target="_blank">Main repository</a> • <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly-docs" target="_blank">Docs repository</a>
+        </p>
+      </footer>
+    </section>
   </section>
 </template>
 
