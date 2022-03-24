@@ -8,6 +8,7 @@ module.exports = {
     fontFamily: {
         'sans': ['DM Sans', 'sans-serif'],
         'mono': ['Roboto Mono', 'Cascadia Code', 'monospace'],
+        'bebas': ['Bebas Neue', 'DM Sans', 'sans-serif'],
     },
   },
 }

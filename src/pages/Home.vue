@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-14rem)] p-6 md:py-32 md:px-48">
-    <h1 class="text-4xl font-medium md:text-5xl mb-10">
+    <h1 class="text-5xl font-medium font-bebas md:text-6xl tracking-wide mb-10">
       The <span class="text-emerald-500 dark:text-emerald-400">modern</span> Node.js framework
     </h1>
 
