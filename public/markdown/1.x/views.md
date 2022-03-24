@@ -16,11 +16,11 @@
 ```
 &lt;h1&gt;{{ title }}&lt;/h1&gt;
 
-&lt;menu&gt;
+&lt;nav class="menu"&gt;
   [if logged]
     &lt;a href="/logout"&gt;Log out&lt;/a&gt;
   [/if]
-&lt;/menu&gt;
+&lt;/nav&gt;
 ```
 
 % All directives like foreach loops use the square brackets and slash syntax:
@@ -31,9 +31,13 @@
 [/each]
 ```
 
-% For displaying passed variables use `{{ variable }}` syntax. Variables are automatically escaped from HTML to prevent XSS attacks.
+% For displaying passed variables use `{{ variable }}` syntax.
 
-% Some frontend frameworks like Vue use the same bracket syntax for displaying data. To render raw brackets put `@` sign before them:
+???
+Variables are automatically escaped from HTML to prevent XSS attacks.
+???
+
+% Some frontend frameworks like [Vue](https://vuejs.org) use the same bracket syntax for displaying data. To render raw brackets put `@` sign before them:
 
 ```
 @{{ value }}

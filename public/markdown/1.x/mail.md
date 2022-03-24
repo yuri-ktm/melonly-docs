@@ -56,7 +56,7 @@ export class WelcomeEmail extends Email {
 
 % The above email will render `views/mail.welcome.melon.html` template. You can pass any variables to the template like we done it in view rendering.
 
-% Sending emails using this method is very similar. Instead of 
+% Sending emails using this method is very similar. Instead of passing content as a string, you can create email instance:
 
 ```
 import { WelcomeEmail } from '../mail/welcome.email'

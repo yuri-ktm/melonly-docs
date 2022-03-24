@@ -3,6 +3,7 @@
 
 - [Introduction](#introduction)
 - [Requests and Responses](#requests-and-responses)
+- [URL Parameters](#url-parameters)
 - [Form Input Data](#form-input-data)
 - [Redirects](#redirects)
 - [Headers](#headers)
@@ -10,11 +11,13 @@
 
 ## Introduction
 
-Melonly provides a fluent API for dealing with web requests and responses which are respresented as objects.
+% Melonly provides a fluent API for dealing with web requests and responses which are respresented as objects.
 
 ## Requests and Responses
 
-% You can inject `Request` and `Response` objects to a controller by type-hintng to use them:
+% Supported HTTP methods for requests are: `GET`, `POST`, `PUT`, `PATCH` and `DELETE`. Each web request is represented by `Request` object.
+
+% You can inject `Request` and `Response` objects to a controller by type-hintng:
 
 ```
 import { Request, Response } from '@melonly/core'
@@ -22,6 +25,8 @@ import { Request, Response } from '@melonly/core'
 // In controller's constructor
 constructor(private request: Request, private response: Response) {}
 ```
+
+## URL Parameters
 
 % You can get matched URL parameters:
 
@@ -68,7 +73,9 @@ public create(): RedirectResponse {
 
 ```
 import axios from 'axios'
+
 axios.post('/users', data)
+axios.delete('/users', data)
 ```
 
 
