@@ -39,15 +39,19 @@
     </svg>
 
     <section class="w-full md:w-1/2">
-      <div v-html="parseMarkdown(markdown)"></div>
+      <div class="flex justify-center">
+        <div class="w-9 h-9 rounded-full border-4 border-slate-200 border-r-emerald-500 animate-spin dark:border-gray-800 dark:border-r-emerald-400" v-if="loading"></div>
+      </div>
+
+      <div v-html="parseMarkdown(markdown)" v-if="!loading"></div>
 
       <footer class="flex flex-col justify-center items-center text-sm md:text-base w-full h-56 bg-slate-100 dark:bg-gray-800/80 rounded-lg p-6 mt-32">
-        <p class="opacity-80 mb-2">Copyright © 2022 Dominik Rajkowski</p>
+        <p class="opacity-80 mb-3">Copyright © 2022 Dominik Rajkowski</p>
 
         <p class="opacity-80">Melonly.js open-source framework is licensed under <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
         <p class="opacity-80">Melonly logo created by <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://www.flaticon.com/free-icons/watermelon" target="_blank">Freepik - Flaticon</a></p>
 
-        <p class="opacity-80 mt-2">
+        <p class="opacity-80 mt-3">
           <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly" target="_blank">Main repository</a> • <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly-docs" target="_blank">Docs repository</a>
         </p>
       </footer>
@@ -84,17 +88,24 @@
   const markdown = ref('')
   const section = route.params.section
   const showMenu = ref(false)
+  const loading = ref(true)
 
   usePageTitle('Documentation')
 
   const fetchDocs = async (version, section) => {
+    loading.value = true
+
     try {
       const result = await axios.get(`/markdown/${version}/${section}.md`)
 
       markdown.value = result.data
     } catch (error) {
       console.warn(error)
+
+      return
     }
+
+    loading.value = false
   }
 
   const toggleMenu = () => {
@@ -106,4 +117,6 @@
   })
 
   fetchDocs(route.params.version, route.params.section)
+
+  loading.value = false
 </script>

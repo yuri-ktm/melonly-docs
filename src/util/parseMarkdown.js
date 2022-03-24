@@ -1,5 +1,5 @@
 const syntaxes = {
-  '<h1 class="text-2xl md:text-3xl font-medium mb-5">$1</h1>': /^# (.*)\r\n$/gm,
+  '<h1 class="text-2xl md:text-3xl font-bold mb-5">$1</h1>': /^# (.*)\r\n$/gm,
 
   '<h2 class="relative -left-3 md:-left-7 text-xl md:text-2xl mt-16 mb-3"><span class="text-emerald-500 select-none mr-2">#</span>$1</h2>': /^## (.*)\r\n$/gm,
 
