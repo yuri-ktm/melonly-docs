@@ -48,7 +48,9 @@
 return this.response.render('pages.welcome')
 ```
 
-% Note that view file names should not contain dot signs.
+!!!
+View file names should not contain dot signs as they are interpreted as subdirectories.
+!!!
 
 ## Custom Error Pages
 

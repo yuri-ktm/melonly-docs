@@ -2,7 +2,8 @@
 # Controllers and Routing
 
 - [Introduction](#introduction)
-- [Main Application File](#main-application-file)
+- [Creating Controllers](#creating-controllers)
+- [Registering Controllers](#registering-controllers)
 - [Route Patterns](#route-patterns)
 
 ## Introduction
@@ -29,14 +30,16 @@ export class AppController {
 
 % Controller methods should always return some value. Melonly automatically sends proper headers based on returned content. In case of object / array the response will have JSON type. When returned value is text, it will be rendered as HTML.
 
-You may create controllers with CLI:
+## Creating Controllers
+
+% You may create controllers with CLI:
 
 ```
 <span class="select-none mr-2">$</span>melon make controller post
 ```
 
 
-## Main Application File
+## Registering Controllers
 
 % The main application entry is located in `src/main.ts` file. This is the place where controllers, middleware and channels are registered. Every time you create new controller, you have to register it:
 
@@ -50,16 +53,20 @@ app.registerControllers([
 
 ## Route Patterns
 
-% Route patterns can be also dynamic. Just use `:paramName` syntax:
+% Route patterns are dynamic. Just use `:paramName` syntax to create variable URL:
 
 ```
 @Get('/users/:id')
 ```
 
-% To make paramater optional use the question mark:
+% To make the paramater optional use the question mark:
 
 ```
 @Get('/users/:id?')
 ```
 
-% Route above will match both `/users` and `/users/327` paths.
+% The above route will match both `/users` and `/users/327` URLs.
+
+???
+Note that controllers should be as short as possible - they are only responsible of handling web requests and returning a response. For more logic use [services](/docs/1.x/services).
+???

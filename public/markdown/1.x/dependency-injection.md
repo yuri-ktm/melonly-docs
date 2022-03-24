@@ -42,7 +42,9 @@ export class OtherService {
 
 Melonly will automatically resolve type-hinted dependencies and pass them to your class.
 
-Note that controllers decorated with `@Controller` are automatically injectable.
+???
+Controllers with `@Controller` decorator are automatically injectable.
+???
 
 ## Singletons
 

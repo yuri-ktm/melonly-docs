@@ -3,7 +3,7 @@
     <nav
       class="fixed right-3 top-16 md:left-0 md:right-unset md:visible flex flex-col w-80 h-full md:4/5 overflow-auto bg-slate-100 dark:bg-gray-800 md:dark:bg-gray-800/80 rounded-lg md:rounded-none shadow-xl md:shadow-none px-10 py-8 z-20"
       :class="{ 'visible': showMenu, 'invisible': !showMenu }"
-      @click="showMenu = false"
+      v-outclick="() => showMenu = false"
     >
       <div class="mb-6">
         <span class="text-sm mr-3">Version</span>
@@ -19,6 +19,7 @@
       <RouterLink
         class="relative md:px-2 md:py-1 my-1 opacity-80 hover:opacity-95 transition-transform duration-300 hover:translate-x-1 outline-none rounded-lg focus-visible:ring-2 ring-emerald-400"
         :class="{ 'before:bg-emerald-500 before:w-1 before:h-4 before:absolute before:-left-3 md:before:-left-2 before:top-2 md:before:top-3 before:block before:rounded-md opacity-95': $route.path.includes(`/${kebabCase(item)}`) }"
+        @click="showMenu = false"
         v-for="(item, index) in menuItems"
         :to="kebabCase(item)"
         :key="index"
@@ -40,7 +41,7 @@
     <section class="w-full md:w-1/2">
       <div v-html="parseMarkdown(markdown)"></div>
 
-      <footer class="flex flex-col justify-center items-center w-full h-56 bg-slate-100 dark:bg-gray-800/80 rounded-lg p-6 mt-32">
+      <footer class="flex flex-col justify-center items-center text-sm md:text-base w-full h-56 bg-slate-100 dark:bg-gray-800/80 rounded-lg p-6 mt-32">
         <p class="opacity-80 mb-2">Copyright © 2022 Dominik Rajkowski</p>
 
         <p class="opacity-80">Melonly.js open-source framework is licensed under <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>

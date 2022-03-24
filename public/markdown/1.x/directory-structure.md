@@ -11,11 +11,11 @@
 
 ## Introduction
 
-% Default Melonly application structure consists of several main folders containing source code. It's a good idea to explore them!
+% Default Melonly application structure consists of six main directories containing source code. It's a good idea to explore them!
 
 ## `/database`
 
-% In this directory database migrations are created by default. You may also store SQLite database there if you feel it convinient.
+% In this directory database migrations are created by default. You may also store SQLite database there if you feel it convenient.
 
 ## `/public`
 

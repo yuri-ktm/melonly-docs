@@ -26,7 +26,7 @@ const text = 'Hello world'
 const cipher = Crypt.encrypt(text)
 ```
 
-To decrypt this cipher back, use `Cipher.decrypt`:
+To decrypt this cipher back, use `Crypt.decrypt`:
 
 ```
 const decrypted = Crypt.decrypt(cipher.content, cipher.iv)
@@ -34,12 +34,17 @@ const decrypted = Crypt.decrypt(cipher.content, cipher.iv)
 
 ## Hashing
 
-Hashing is an another way to encrypt data (one-way). For example, it is useful for storing passwords in database for security reasons.
+Hashing is an another way to encrypt data (in one-way). For example, it is useful for storing passwords in database.
 
 ```
-import { Crypt } from '@melonly/core'
+import { Hash } from '@melonly/core'
 
-const passwordHash = Crypt.hash(password)
+const passwordHash = Hash.make(password)
 ```
 
-Note that we can only compare two hashes without ability to decrypt hashed strings.
+Note that you can only compare two hashes without the ability to decrypt hashed strings. To check if supplied string (password for example) is the same as hash, use the `compare` method:
+
+```
+// true or false
+const passwordCorrect = Hash.compare(password, passwordHash)
+```

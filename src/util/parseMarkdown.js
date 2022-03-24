@@ -17,6 +17,10 @@ const syntaxes = {
 
   '<code class="prettyprint relative block group bg-gray-900 text-gray-50 text-sm leading-7 whitespace-pre overflow-auto rounded-xl shadow-lg px-7 py-5 dark:bg-gray-800 mt-5 mb-3">$1<svg xmlns="http://www.w3.org/2000/svg" class="absolute right-3 top-3 h-6 w-6 opacity-70 cursor-pointer hidden group-hover:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" title="Copy to clipboard"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /></svg></code>': /```\r\n((.*?|\s*?)*?)\r\n```/gm,
 
+  '<div class="my-10 border-2 border-yellow-500 rounded-lg dark:text-gray-50/80 bg-slate-50 dark:bg-gray-800 px-7 py-6" role="alert"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-2 stroke-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>$1</div>': /!!!\r\n((.*?|\s*?)*?)\r\n!!!/gm,
+
+  '<div class="my-10 border-2 border-emerald-500 rounded-lg dark:text-gray-50/80 bg-slate-50 dark:bg-gray-800 px-7 py-6" role="alert"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-2 stroke-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>$1</div>': /\?\?\?\r\n((.*?|\s*?)*?)\r\n\?\?\?/gm,
+
   '<code class="px-2 py-1 text-sm bg-slate-100 dark:bg-gray-800 rounded-md">$1</code>': /`(.*?)`/g,
 
   '<p class="mb-2 text-gray-700 dark:text-gray-300">$1</p>': /^% (.*)$/gm,
