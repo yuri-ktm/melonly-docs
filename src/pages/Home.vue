@@ -56,7 +56,7 @@ public index(): ViewResponse {
     <p class="opacity-80">Melonly logo created by <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://www.flaticon.com/free-icons/watermelon" target="_blank">Freepik - Flaticon</a></p>
 
     <p class="opacity-80 mt-3">
-      <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly" target="_blank">Main repository</a> • <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly-docs" target="_blank">Docs repository</a>
+      <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500 mr-3" href="https://github.com/Doc077/melonly" target="_blank">Melonly repository</a><a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly-docs" target="_blank">Docs repository</a>
     </p>
   </footer>
 </template>

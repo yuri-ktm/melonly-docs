@@ -35,7 +35,7 @@ constructor(private request: Request, private response: Response) {}
 public show(): string {
   const { id } = this.request.params
 
-  return `User id: ${id}`
+  return @`User id: ${id}`
 }
 ```
 
@@ -45,7 +45,6 @@ public show(): string {
 // Route: /search?query=user1
 const { query } = this.request.query // 'user1'
 ```
-
 
 ## Form Input Data
 
@@ -78,7 +77,6 @@ axios.post('/users', data)
 axios.delete('/users', data)
 ```
 
-
 ## Redirects
 
 % Example redirect response using the `redirect` method:
@@ -91,7 +89,6 @@ public index(): RedirectResponse {
   return this.response.redirect('/login')
 }
 ```
-
 
 ## Headers
 

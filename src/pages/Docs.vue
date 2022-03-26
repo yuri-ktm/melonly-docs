@@ -1,9 +1,8 @@
 <template>
   <section class="flex flex-col items-center w-full p-6 md:py-20 md:px-48">
     <nav
-      class="fixed right-3 top-16 md:left-0 md:right-unset md:visible flex flex-col w-80 h-full md:4/5 overflow-auto bg-slate-100 dark:bg-gray-800 md:dark:bg-gray-800/80 rounded-lg md:rounded-none shadow-xl md:shadow-none px-10 py-8 z-20"
+      class="fixed right-3 top-16 md:left-0 md:right-unset md:visible flex flex-col w-80 h-[calc(100%-5rem)] md:h-full overflow-auto bg-slate-100 dark:bg-gray-800 md:dark:bg-gray-800/80 rounded-lg md:rounded-none shadow-xl md:shadow-none px-10 py-8 z-20"
       :class="{ 'visible': showMenu, 'invisible': !showMenu }"
-      v-outclick="() => showMenu = false"
     >
       <div class="mb-6">
         <span class="text-sm mr-3">Version</span>
@@ -52,7 +51,7 @@
         <p class="opacity-80">Melonly logo created by <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://www.flaticon.com/free-icons/watermelon" target="_blank">Freepik - Flaticon</a></p>
 
         <p class="opacity-80 mt-3">
-          <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly" target="_blank">Main repository</a> • <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly-docs" target="_blank">Docs repository</a>
+          <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500 mr-4" href="https://github.com/Doc077/melonly" target="_blank">Melonly repository</a><a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly-docs" target="_blank">Docs repository</a>
         </p>
       </footer>
     </section>
@@ -113,6 +112,8 @@
   }
 
   onBeforeRouteUpdate(async (to) => {
+    if (to.path === route.path) return
+
     fetchDocs(to.params.version, to.params.section)
   })
 
