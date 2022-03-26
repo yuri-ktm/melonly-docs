@@ -44,7 +44,7 @@
 
       <div v-html="parseMarkdown(markdown)" v-if="!loading"></div>
 
-      <footer class="flex flex-col justify-center items-center text-sm md:text-base w-full h-56 bg-slate-100 dark:bg-gray-800/80 rounded-lg p-6 mt-32">
+      <footer class="flex flex-col justify-center items-center text-sm md:text-base w-screen -ml-6 md:ml-0 md:w-full h-56 bg-slate-100 dark:bg-gray-800/80 md:rounded-lg p-6 mt-32">
         <p class="opacity-80 mb-3">Copyright © 2022 Dominik Rajkowski</p>
 
         <p class="opacity-80">Melonly.js open-source framework is licensed under <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
