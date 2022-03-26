@@ -6,27 +6,29 @@
 
     <div class="mb-20 md:mb-28">
       <RouterLink
-        class="bg-emerald-500 inline-block cursor-pointer text-base px-4 md:px-6 py-3 rounded-xl text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-2 select-none shadow-lg shadow-emerald-500/20 outline-none focus:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-gray-900 focus:ring-emerald-400"
+        class="bg-emerald-500 inline-block cursor-pointer text-base px-4 md:px-6 py-3 rounded-xl text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-1 select-none shadow-lg shadow-emerald-500/20 outline-none focus:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-gray-900 focus:ring-emerald-400"
         :to="`/docs/${DEFAULT_VERSION}/installation`"
       >
-        Installation
+        Get Started
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
         </svg>
       </RouterLink>
 
-      <RouterLink
-        class="bg-slate-100 inline-block cursor-pointer text-base px-4 md:px-6 py-3 rounded-xl text-gray-500 transition-all duration-300 hover:opacity-90 hover:-translate-y-2 select-none ml-2 dark:bg-gray-800 dark:text-gray-50 outline-none focus:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-gray-900 focus:ring-emerald-400"
-        to="/docs"
+      <a
+        class="bg-slate-100 inline-block cursor-pointer text-base px-4 md:px-6 py-3 rounded-xl text-gray-500 transition-all duration-300 hover:opacity-90 hover:-translate-y-1 select-none ml-2 dark:bg-gray-800 dark:text-gray-50 outline-none focus:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-gray-900 focus:ring-emerald-400"
+        target="_blank"
+        href="https://github.com/Doc077/melonly"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-        Documentation
-      </RouterLink>
+        GitHub
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        </svg>
+      </a>
     </div>
 
     <code class="prettyprint bg-gray-900 text-gray-50 text-sm leading-8 whitespace-pre overflow-hidden rounded-xl shadow-lg px-5 md:px-7 py-3 md:py-5 dark:bg-gray-800">
-      <span class="select-none mr-3">$</span>npm install -g @melonly/cli<br>
-      <span class="select-none mr-3">$</span>melon new my-app
+      <span class="select-none mr-3">$</span>npm install -g @melonly/cli
     </code>
   </section>
 
