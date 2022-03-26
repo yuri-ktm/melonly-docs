@@ -38,8 +38,8 @@
     </svg>
 
     <section class="w-full md:w-1/2">
-      <div class="flex justify-center">
-        <div class="w-9 h-9 rounded-full border-4 border-slate-200 border-r-emerald-500 animate-spin dark:border-gray-800 dark:border-r-emerald-400" v-if="loading"></div>
+      <div class="flex justify-center mt-20" v-if="loading">
+        <div class="w-9 h-9 rounded-full border-4 border-slate-200 border-r-emerald-500 animate-spin dark:border-gray-800 dark:border-r-emerald-400"></div>
       </div>
 
       <div v-html="parseMarkdown(markdown)" v-if="!loading"></div>
