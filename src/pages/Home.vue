@@ -27,9 +27,7 @@
       </a>
     </div>
 
-    <code class="prettyprint bg-gray-900 text-gray-50 text-sm leading-8 whitespace-pre overflow-hidden rounded-xl shadow-lg px-5 md:px-7 py-3 md:py-5 dark:bg-gray-800">
-      <span class="select-none mr-3">$</span>npm install -g @melonly/cli
-    </code>
+    <CodeBlock class="dark:bg-gray-800"><span class="select-none mr-3">$</span>npm install -g @melonly/cli</CodeBlock>
   </section>
 
   <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-14rem)] bg-gray-900 dark:bg-gray-800/80 text-gray-50 p-6 md:py-32 md:px-48">
@@ -37,11 +35,12 @@
 
     <p class="opacity-90 text-lg mb-10">Melonly focuses on elegant and simple syntax which scales well in larger projects.</p>
 
-    <pre class="prettyprint bg-gray-800 text-gray-50 text-sm leading-8 whitespace-pre overflow-x-auto w-full md:w-auto rounded-xl shadow-lg px-7 py-5 dark:bg-gray-900">@Get('/')
-public index(): ViewResponse {
-  return this.response.render('home', { message: 'Hello World' })
-}
-</pre>
+    <CodeBlock class="w-full bg-gray-800 dark:bg-gray-900 w-auto">
+      @Get('/')<br>
+      public index(): ViewResponse {<br>
+      &nbsp;&nbsp;return this.response.render('home', { message: 'Hello World' })<br>
+      }<br>
+    </CodeBlock>
   </section>
 
   <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-24rem)] p-6 md:py-32 md:px-48">
@@ -54,7 +53,7 @@ public index(): ViewResponse {
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mt-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span class="opacity-90">Secure web apps</span>
   </section>
 
-  <footer class="flex flex-col justify-center items-center w-full h-96 bg-gray-900 dark:bg-gray-800/80 text-center p-3 md:py-32 mt-32">
+  <footer class="flex flex-col justify-center items-center w-full h-96 bg-gray-900 dark:bg-gray-800/80 text-center text-gray-50 p-3 md:py-32 mt-32">
     <p class="opacity-80 mb-3">Copyright © 2022 Dominik Rajkowski</p>
 
     <p class="opacity-80">Melonly.js open-source framework is licensed under <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
@@ -68,4 +67,5 @@ public index(): ViewResponse {
 
 <script setup>
   import { DEFAULT_VERSION } from '../util/constants'
+  import CodeBlock from '../components/CodeBlock.vue'
 </script>

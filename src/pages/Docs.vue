@@ -16,8 +16,8 @@
       </div>
 
       <RouterLink
-        class="relative md:px-2 md:py-1 my-1 opacity-80 hover:opacity-95 transition-transform duration-300 hover:translate-x-1 outline-none rounded-lg focus-visible:ring-2 ring-emerald-400"
-        :class="{ 'before:bg-emerald-500 before:w-1 before:h-4 before:absolute before:-left-3 md:before:-left-2 before:top-2 md:before:top-3 before:block before:rounded-md opacity-95': $route.path.includes(`/${kebabCase(item)}`) }"
+        class="relative md:px-2 my-1 opacity-80 hover:opacity-95 transition-transform duration-300 hover:translate-x-1 outline-none rounded-lg focus-visible:ring-2 ring-emerald-400"
+        :class="{ 'before:bg-emerald-500 before:w-1 before:h-4 before:absolute before:-left-3 before:top-2 before:block before:rounded-md opacity-95': $route.path.includes(`/${kebabCase(item)}`) }"
         @click="showMenu = false"
         v-for="(item, index) in menuItems"
         :to="kebabCase(item)"
