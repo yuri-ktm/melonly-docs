@@ -21,7 +21,7 @@ const syntaxes = {
 
   '<div class="my-10 border-2 border-emerald-500 rounded-lg dark:text-gray-50/80 bg-slate-50 dark:bg-gray-800 px-7 py-6" role="alert"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-2 stroke-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>$1</div>': /\?\?\?\r\n((.*?|\s*?)*?)\r\n\?\?\?/gm,
 
-  '<code class="px-2 py-1 text-sm bg-slate-100 dark:bg-gray-800 rounded-md">$1</code>': /[^@]`(.*?)`/g,
+  '$1<code class="px-2 py-1 text-sm bg-slate-100 dark:bg-gray-800 rounded-md">$2</code>': /([^@])`(.*?)`/g,
 
   '<p class="mb-4 text-gray-700 dark:text-gray-300">$1</p>': /^% (.*)$/gm,
 
@@ -35,8 +35,11 @@ export const parseMarkdown = (markdown) => {
     output = output.replaceAll(regex, replacement)
   }
 
-  for (const expression of output.matchAll(/^## (.*)\r\n$/gm) ?? []) {
-    output = output.replace(expression[0], `<h2 class="relative -left-3 md:-left-7 text-xl md:text-2xl mt-16 mb-3" id="${kebabCase(expression[1])}"><span class="text-emerald-500 select-none mr-2">#</span>${expression[1]}</h2>`)
+  /**
+   * Add anchor links
+   */
+  for (const expression of output.matchAll(/^## ?(.*)\r\n$/gm) ?? []) {
+    output = output.replace(expression[0], `<h2 class="relative -left-3 md:-left-7 text-xl md:text-2xl mt-16 mb-3" id="${kebabCase(expression[1].replaceAll(/\<(.*?)\>/g, '').replace('/', ''))}"><span class="text-emerald-500 select-none mr-2">#</span>${expression[1]}</h2>`)
   }
 
   return output

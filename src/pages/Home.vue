@@ -24,7 +24,10 @@
       </RouterLink>
     </div>
 
-    <code class="prettyprint bg-gray-900 text-gray-50 text-sm leading-8 whitespace-pre overflow-hidden rounded-xl shadow-lg px-5 md:px-7 py-3 md:py-5 dark:bg-gray-800"><span class="select-none mr-2">$</span>npm install -g @melonly/cli<br class="md:hidden"><span class="hidden md:inline"> && </span><span class="select-none mr-2 md:hidden">$</span>melon new my-app</code>
+    <code class="prettyprint bg-gray-900 text-gray-50 text-sm leading-8 whitespace-pre overflow-hidden rounded-xl shadow-lg px-5 md:px-7 py-3 md:py-5 dark:bg-gray-800">
+      <span class="select-none mr-3">$</span>npm install -g @melonly/cli<br>
+      <span class="select-none mr-3">$</span>melon new my-app
+    </code>
   </section>
 
   <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-14rem)] bg-gray-900 dark:bg-gray-800/80 text-gray-50 p-6 md:py-32 md:px-48">
