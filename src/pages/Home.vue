@@ -24,7 +24,7 @@
       </RouterLink>
     </div>
 
-    <code class="prettyprint bg-gray-900 text-gray-50 text-sm leading-8 whitespace-pre overflow-hidden rounded-xl shadow-lg px-5 md:px-7 py-3 md:py-5 dark:bg-gray-800">$ npm install -g @melonly/cli<br class="md:hidden"><span class="hidden md:inline"> && </span>melon new my-app</code>
+    <code class="prettyprint bg-gray-900 text-gray-50 text-sm leading-8 whitespace-pre overflow-hidden rounded-xl shadow-lg px-5 md:px-7 py-3 md:py-5 dark:bg-gray-800"><span class="select-none mr-2">$</span>npm install -g @melonly/cli<br class="md:hidden"><span class="hidden md:inline"> && </span><span class="select-none mr-2 md:hidden">$</span>melon new my-app</code>
   </section>
 
   <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-14rem)] bg-gray-900 dark:bg-gray-800/80 text-gray-50 p-6 md:py-32 md:px-48">
@@ -42,11 +42,11 @@ public index(): ViewResponse {
   <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-24rem)] p-6 md:py-32 md:px-48">
     <h2 class="text-3xl md:text-4xl mb-12"><span class="text-emerald-500 dark:text-emerald-400">Why</span> should you try Melonly?</h2>
 
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span class="opacity-90">Fast performance</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span class="opacity-90">Performant</span>
 
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mt-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span class="opacity-90">Many features out-of-the-box</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mt-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span class="opacity-90">Auth system, routing & more</span>
 
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mt-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span class="opacity-90">Secure</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mt-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span class="opacity-90">Secure web apps</span>
   </section>
 
   <footer class="flex flex-col justify-center items-center w-full h-96 bg-gray-900 dark:bg-gray-800/80 text-center p-3 md:py-32 mt-32">
