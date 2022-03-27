@@ -8,7 +8,7 @@
       <span class="
         absolute
         inset-0
-        bg-slate-300
+        bg-slate-300/70
         dark:bg-gray-600
         rounded-xl
         cursor-pointer

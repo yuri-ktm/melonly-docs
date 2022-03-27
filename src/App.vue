@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="fixed left-0 top-0 flex justify-between items-center bg-white dark:bg-gray-900 w-full h-16 px-4 md:px-28 shadow-md shadow-slate-500/10 dark:shadow-none z-20">
+    <nav class="fixed left-0 top-0 flex justify-between items-center bg-white/95 dark:bg-gray-900/70 backdrop-blur w-full h-16 px-4 md:px-28 shadow shadow-slate-500/10 dark:shadow-none z-20">
       <RouterLink class="flex items-center" to="/">
         <img class="w-8" src="/logo.png" alt="Logo">
 
