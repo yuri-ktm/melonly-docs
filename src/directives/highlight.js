@@ -1,10 +1,11 @@
 const keywords = [
+  'cd ',
   'constructor',
   'each',
   'from',
   'import',
-  'in',
-  'melon',
+  'in ',
+  'melon ',
   'npm',
   'private',
   'protected',
@@ -14,8 +15,10 @@ const keywords = [
 ]
 
 const types = [
+  'boolean',
   'number',
   'string',
+  'RedirectResponse',
   'ViewResponse',
 ]
 

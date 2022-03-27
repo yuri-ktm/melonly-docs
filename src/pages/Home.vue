@@ -65,7 +65,10 @@
   </footer>
 </template>
 
-<script setup>
+<script setup> 
+  import { usePageTitle } from '../composables/usePageTitle'
   import { DEFAULT_VERSION } from '../util/constants'
   import CodeBlock from '../components/CodeBlock.vue'
+
+  usePageTitle('The Modern Node.js Framework')
 </script>
