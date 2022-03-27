@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-14rem)] p-5 md:py-32 md:px-48">
-    <h1 class="text-5xl font-medium font-bebas md:text-6xl tracking-wide mb-10">
+    <h1 class="text-4xl font-medium font-nunito md:text-5xl tracking-wide mb-10">
       The <span class="text-emerald-500 dark:text-emerald-400">modern</span> Node.js framework
     </h1>
 
@@ -31,7 +31,7 @@
   </section>
 
   <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-14rem)] bg-gray-900 dark:bg-gray-800/80 text-gray-50 p-6 md:py-20 md:px-48">
-    <h2 class="text-3xl md:text-4xl mb-8"><span class="text-emerald-400">Awesome</span> developer experience</h2>
+    <h2 class="text-3xl md:text-4xl font-nunito mb-8"><span class="text-emerald-400">Awesome</span> developer experience</h2>
 
     <p class="opacity-90 text-lg mb-10">Melonly focuses on elegant and simple syntax which scales well in larger projects.</p>
 
@@ -51,17 +51,35 @@
     </CodeBlock>
   </section>
 
-  <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-24rem)] p-6 md:py-32 md:px-48">
-    <h2 class="text-3xl md:text-4xl mb-12"><span class="text-emerald-500 dark:text-emerald-400">Why</span> should you try Melonly?</h2>
+  <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-24rem)] p-6 md:py-20 md:px-48">
+    <h2 class="text-3xl md:text-4xl font-nunito mb-12"><span class="text-emerald-500 dark:text-emerald-400">Why</span> should you try Melonly?</h2>
 
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span class="opacity-90">Performant</span>
+    <div class="bg-slate-100 dark:bg-gray-800 flex items-center rounded-lg p-5 mb-5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+      </svg>
 
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mt-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span class="opacity-90">Auth system, routing & more</span>
+      <span class="opacity-90">Performant</span>
+    </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mt-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span class="opacity-90">Secure web apps</span>
+    <div class="bg-slate-100 dark:bg-gray-800 flex items-center rounded-lg p-5 mb-5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+      </svg>
+
+      <span class="opacity-90">Auth system, routing & more</span>
+    </div>
+
+    <div class="bg-slate-100 dark:bg-gray-800 flex items-center rounded-lg p-5 mb-5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+      </svg>
+
+      <span class="opacity-90">Secure web apps</span>
+    </div>
   </section>
 
-  <footer class="flex flex-col justify-center items-center w-full h-96 bg-gray-900 dark:bg-gray-800/80 text-center text-gray-50 p-3 md:py-32 mt-32">
+  <footer class="flex flex-col justify-center items-center w-full h-96 bg-gray-900 dark:bg-gray-800/60 text-center text-gray-50 p-3 md:py-32 mt-32">
     <p class="opacity-80 mb-3">Copyright © 2022 Dominik Rajkowski</p>
 
     <p class="opacity-80">Melonly.js open-source framework is licensed under <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
