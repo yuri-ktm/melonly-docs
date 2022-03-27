@@ -50,11 +50,11 @@ export default {
     }
 
     for (const additional of additionals) {
-      content = content.replaceAll(additional, `<span class="text-gray-50/70">${additional}</span>`)
+      content = content.replaceAll(additional, `<span class="text-slate-50/70">${additional}</span>`)
     }
 
     for (const comment of comments) {
-      content = content.replaceAll(comment, `<span class="text-gray-50/60 italic">$1</span>`)
+      content = content.replaceAll(comment, `<span class="text-slate-50/60 italic">$1</span>`)
     }
 
     for (const type of types) {
@@ -64,8 +64,8 @@ export default {
     /**
      * Melon templates
      */
-    content = content.replaceAll(/(\[\/?)/g, `<span class="opacity-80">$1</span>`)
-    content = content.replaceAll(/(\[\/?.*?)\]/g, `$1<span class="opacity-80">]</span>`)
+    content = content.replaceAll(/(\[\/?)/g, `<span class="text-slate-50/60">$1</span>`)
+    content = content.replaceAll(/(\[\/?.*?)\]/g, `$1<span class="text-slate-50/60">]</span>`)
 
     /**
      * Literals

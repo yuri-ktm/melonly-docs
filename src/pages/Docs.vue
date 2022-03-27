@@ -17,7 +17,7 @@
 
       <RouterLink
         class="relative md:px-2 my-1 opacity-80 hover:opacity-95 transition-transform duration-300 hover:translate-x-1 outline-none rounded-lg focus-visible:ring-2 ring-emerald-400"
-        :class="{ 'before:bg-emerald-500 before:w-1 before:h-4 before:absolute before:-left-3 before:top-2 before:block before:rounded-md opacity-95': $route.path.includes(`/${kebabCase(item)}`) }"
+        :class="{ 'before:bg-emerald-500 before:w-1 before:h-4 before:absolute before:-left-3 before:top-2 before:block before:rounded-md before:bg-gradient-to-b before:from-emerald-400 before:to-teal-400 opacity-95': $route.path.includes(`/${kebabCase(item)}`) }"
         @click="showMenu = false"
         v-for="(item, index) in menuItems"
         :to="kebabCase(item)"
@@ -48,10 +48,12 @@
         <p class="opacity-80 mb-3">Copyright © 2022 Dominik Rajkowski</p>
 
         <p class="opacity-80">Melonly.js open-source framework is licensed under <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
-        <p class="opacity-80">Melonly logo created by <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://www.flaticon.com/free-icons/watermelon" target="_blank">Freepik - Flaticon</a></p>
+        <p class="opacity-80">Melonly logo created by <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://www.flaticon.com/free-icons/melon" target="_blank">Freepik - Flaticon</a></p>
 
-        <p class="opacity-80 mt-3">
-          <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500 mr-4" href="https://github.com/Doc077/melonly" target="_blank">Melonly repository</a><a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly-docs" target="_blank">Docs repository</a>
+        <p class="flex opacity-80 border border-dashed border-gray-500 rounded-xl px-5 py-3 mt-6">
+          <img class="w-8 h-8 mr-3" src="/logo.png">
+
+          <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500 mr-3" href="https://github.com/Doc077/melonly" target="_blank">Melonly repository</a><a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly-docs" target="_blank">Docs repository</a>
         </p>
       </footer>
     </section>

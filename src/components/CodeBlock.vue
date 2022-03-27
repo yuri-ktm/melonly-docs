@@ -1,6 +1,6 @@
 <template>
-  <div class="relative group bg-gray-900 rounded-xl px-5 md:px-7 py-3 md:py-5 shadow-lg">
-    <pre class="text-slate-300 text-sm leading-8 whitespace-pre overflow-hidden" ref="content" v-highlight><slot></slot></pre>
+  <div class="relative group bg-gray-900 rounded-xl px-5 md:px-7 py-3 md:py-5 shadow-lg overflow-auto max-w-full">
+    <pre class="text-slate-300 text-sm leading-8 whitespace-pre overflow-auto" ref="content" v-highlight><slot></slot></pre>
 
     <div class="absolute right-3 top-3 opacity-70 cursor-pointer hidden group-hover:block rounded-md bg-gray-900 p-1" title="Copy to clipboard" @click="copy">
       <svg xmlns="http://www.w3.org/2000/svg" class="stroke-gray-50 w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2">

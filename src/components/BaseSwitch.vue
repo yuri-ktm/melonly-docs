@@ -21,7 +21,7 @@
         before:bg-gray-50
         before:rounded-full
         before:transition-transform
-        peer-checked:bg-emerald-500
+        peer-checked:bg-gradient-to-r peer-checked:from-emerald-400 peer-checked:to-teal-400
         peer-checked:before:transform
         peer-checked:before:translate-x-6"
       />
