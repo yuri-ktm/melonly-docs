@@ -11,17 +11,17 @@
           :options="{
             '1.x': '1.x',
           }"
-          :defaultOption="DEFAULT_VERSION"
+          :default-option="DEFAULT_VERSION"
         />
       </div>
 
       <RouterLink
         class="relative md:px-2 my-1 opacity-80 hover:opacity-95 transition-transform duration-300 hover:translate-x-1 outline-none rounded-lg focus-visible:ring-2 ring-emerald-400"
         :class="{ 'before:bg-emerald-500 before:w-1 before:h-4 before:absolute before:-left-3 before:top-2 before:block before:rounded-md before:bg-gradient-to-b before:from-emerald-400 before:to-teal-400 opacity-95': $route.path.includes(`/${kebabCase(item)}`) }"
-        @click="showMenu = false"
-        v-for="(item, index) in menuItems"
         :to="kebabCase(item)"
+        v-for="(item, index) in menuItems"
         :key="index"
+        @click="showMenu = false"
       >{{ item }}</RouterLink>
     </nav>
 
