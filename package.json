@@ -14,7 +14,6 @@
     "@vitejs/plugin-vue": "^2.2.0",
     "autoprefixer": "^10.4.4",
     "axios": "^0.26.1",
-    "particles.js": "^2.0.0",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.23",
     "vite": "^2.8.0",
