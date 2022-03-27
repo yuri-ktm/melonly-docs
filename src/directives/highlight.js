@@ -2,7 +2,9 @@ const keywords = [
   'cd ',
   'constructor',
   'each',
+  'else',
   'from',
+  'if',
   'import',
   'in ',
   'melon ',
@@ -34,8 +36,6 @@ const comments = [
   /(# ?.*?)/gm,
 ]
 
-const signs = ['.', '@', ':', '(', ')', '[', ']', '{', '}']
-
 const literals = [
   /(')(.*?)'/gm,
   /(`)(.*?)`/gm,
@@ -57,13 +57,15 @@ export default {
       content = content.replaceAll(comment, `<span class="opacity-70 italic">$1</span>`)
     }
 
-    for (const sign of signs) {
-      content = content.replaceAll(sign, `<span class="text-gray-200">${sign}</span>`)
-    }
-
     for (const type of types) {
       content = content.replaceAll(type, `<span class="text-purple-300">${type}</span>`)
     }
+
+    /**
+     * Melon templates
+     */
+    content = content.replaceAll(/(\[\/?)/g, `<span class="opacity-80">$1</span>`)
+    content = content.replaceAll(/(\[\/?.*?)\]/g, `$1<span class="opacity-80">]</span>`)
 
     /**
      * Literals

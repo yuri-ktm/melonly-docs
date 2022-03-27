@@ -30,7 +30,7 @@
     <CodeBlock class="dark:bg-gray-800"><span class="select-none mr-3">$</span>npm install -g @melonly/cli</CodeBlock>
   </section>
 
-  <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-14rem)] bg-gray-900 dark:bg-gray-800/80 text-gray-50 p-6 md:py-32 md:px-48">
+  <section class="flex flex-col justify-center items-center w-full h-[calc(100vh-14rem)] bg-gray-900 dark:bg-gray-800/80 text-gray-50 p-6 md:py-20 md:px-48">
     <h2 class="text-3xl md:text-4xl mb-8"><span class="text-emerald-400">Awesome</span> developer experience</h2>
 
     <p class="opacity-90 text-lg mb-10">Melonly focuses on elegant and simple syntax which scales well in larger projects.</p>
@@ -39,7 +39,15 @@
       @Get('/')<br>
       public index(): ViewResponse {<br>
       &nbsp;&nbsp;return this.response.render('home', { message: 'Hello World' })<br>
-      }<br>
+      }
+    </CodeBlock>
+
+    <CodeBlock class="w-full bg-gray-800 dark:bg-gray-900 w-auto mt-7">
+      [if authenticated]<br>
+      &nbsp;&nbsp;&lt;div class="welcome"&gt;&#123;&#123; message &#125;&#125;&lt;/div&gt;<br>
+      [else]<br>
+      &nbsp;&nbsp;&lt;a href="/login"&gt;Log in&lt;/a&gt;<br>
+      [/if]
     </CodeBlock>
   </section>
 
