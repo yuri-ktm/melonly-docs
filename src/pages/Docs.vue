@@ -50,7 +50,7 @@
         <p class="opacity-80">Melonly.js open-source framework is licensed under <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
         <p class="opacity-80">Melonly logo created by <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://www.flaticon.com/free-icons/melon" target="_blank">Freepik - Flaticon</a></p>
 
-        <p class="flex opacity-80 border border-dashed border-gray-500 rounded-xl px-5 py-3 mt-6">
+        <p class="flex items-center opacity-80 border border-dashed border-gray-500 rounded-xl px-5 py-3 mt-6">
           <img class="w-8 h-8 mr-3" src="/logo.png">
 
           <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500 mr-3" href="https://github.com/Doc077/melonly" target="_blank">Melonly repository</a><a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://github.com/Doc077/melonly-docs" target="_blank">Docs repository</a>
@@ -77,6 +77,7 @@
     'Views',
     'Services',
     'HTTP',
+    'Session',
     'Dependency Injection',
     'Encryption and Hashing',
     'Mail',

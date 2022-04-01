@@ -95,7 +95,7 @@ public index(): RedirectResponse {
 % You can also write response headers:
 
 ```
-this.response.header('X-Custom-Header', 'content')
+this.response.header('x-custom-header', 'content')
 ```
 
 ## Cookies

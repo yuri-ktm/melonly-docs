@@ -11,9 +11,9 @@ const syntaxes = {
 
   '<a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="$2">$1</a>': /\[(.*?)\]\((.*?)\)/gm,
 
-  '<div class="ml-5 md:my-3 text-sm"><span class="text-emerald-500 text-sm font-medium">#</span> $1</div>': /^- (.*?)$/gm,
+  '<div class="ml-5 md:my-1"><span class="text-emerald-500 text-sm font-medium">#</span> $1</div>': /^- (.*?)$/gm,
 
-  '<div class="ml-7 md:my-3 text-sm"><span class="text-emerald-500 text-sm font-medium">#</span> $1</div>': /^ *?- (.*?)$/gm,
+  '<div class="ml-7 md:my-1"><span class="text-emerald-500 text-sm font-medium">#</span> $1</div>': /^ *?- (.*?)$/gm,
 
   '<div class="relative group"><code class="block bg-gray-900 text-gray-50 text-sm leading-7 whitespace-pre overflow-auto rounded-xl shadow-lg px-7 py-5 dark:bg-gray-800 mt-3 mb-3">$1</code><svg xmlns="http://www.w3.org/2000/svg" class="absolute right-3 top-3 h-6 w-6 opacity-70 cursor-pointer hidden group-hover:block stroke-gray-50" fill="none" viewBox="0 0 24 24" stroke-width="2" title="Copy to clipboard"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /></svg></div>': /```\r\n((.*?|\s*?)*?)\r\n```/gm,
 

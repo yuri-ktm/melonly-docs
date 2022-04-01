@@ -3,6 +3,8 @@
 
 - [Templates](#templates)
 - [Rendering a View](#rendering-a-view)
+- [Raw HTML Directive](#raw-html-directive)
+- [Form Method Spoofing](#form-method-spoofing)
 - [Custom Error Pages](#custom-error-pages)
 
 ## Templates
@@ -55,6 +57,33 @@ return this.response.render('pages.welcome')
 !!!
 View file names should not contain dot signs as they are interpreted as subdirectories.
 !!!
+
+## Raw HTML Directive
+
+% Sometimes you may want to left some parts of code uncompiled. For example, when you are using some frontend framework, you may want not to parse the code with template engine. That's why Melonly comes with a `[raw]` directive:
+
+```
+[raw]
+  {{ message }}
+[/raw]
+```
+
+% With this directive the above code will render '{{ message }}' as normal HTML, without replacing it with passed variable.
+
+## Form Method Spoofing
+
+% When you're building a RESTful API, you may encounter a problem - HTML forms don't support any other HTTP methods than `GET` and `POST`.
+
+% Melonly lets you to use these methods thanks to `[method]` template directive. Just pass a method name and you'll be able to use `PUT`, `PATCH` and `DELETE` methods in HTML forms:
+
+```
+&lt;form method="post"&gt;
+  [method PATCH]
+  ...
+&lt;/form&gt;
+```
+
+Note that the form must have `method="post"` attribute.
 
 ## Custom Error Pages
 
