@@ -1,11 +1,10 @@
-&lt;!-- omit in toc --&gt;
+<!-- omit in toc -->
 # Websockets and Broadcasting
 
-- [Websockets and Broadcasting](#websockets-and-broadcasting)
-  - [Introduction](#introduction)
-  - [Broadcast Channels](#broadcast-channels)
-  - [Emitting Events](#emitting-events)
-  - [Receiving Events](#receiving-events)
+- [Introduction](#introduction)
+- [Broadcast Channels](#broadcast-channels)
+- [Emitting Events](#emitting-events)
+- [Receiving Events](#receiving-events)
 
 ## Introduction
 
@@ -16,7 +15,7 @@
 % First though, you should get to know the concept of broadcasting channels. Channel is a class used for namespacing events with its own authorization logic. To create new channel class you may use CLI:
 
 ```
-&lt;span class="select-none mr-2"&gt;$&lt;/span&gt;melon make channel chat
+<span class="select-none mr-2">$</span>melon make channel chat
 ```
 
 % The new `src/broadcasting/chat.channel.ts` file will contain following template:
@@ -41,7 +40,7 @@ export class ChatChannel implements ChannelInterface {
 ```
 import { Broadcaster } from '@melonly/core'
 
-Broadcaster.event('message', `chat/${chatId}`)
+Broadcaster.event('message', @`chat/${chatId}`)
 ```
 
 ## Receiving Events
@@ -54,8 +53,8 @@ Broadcaster.event('message', `chat/${chatId}`)
 &lt;script&gt;
   const socket = io()
 
-  socket.on(`chat/${chatId}.message`, (message) =&gt; {
-    ...
+  socket.on(@`chat/${chatId}.message`, (message) =&gt; {
+    console.log(message)
   })
 &lt;/script&gt;
 ```

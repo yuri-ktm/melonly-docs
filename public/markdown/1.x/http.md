@@ -3,11 +3,13 @@
 
 - [Introduction](#introduction)
 - [Requests and Responses](#requests-and-responses)
-- [URL Parameters](#url-parameters)
-- [Form Input Data](#form-input-data)
-- [Redirects](#redirects)
-- [Headers](#headers)
-- [Cookies](#cookies)
+  - [Route Parameters](#route-parameters)
+  - [Form Input Data](#form-input-data)
+  - [Redirects](#redirects)
+  - [Headers](#headers)
+  - [Cookies](#cookies)
+  - [Browser Language](#browser-language)
+- [Session](#session)
 
 ## Introduction
 
@@ -26,9 +28,9 @@ import { Request, Response } from '@melonly/core'
 constructor(private request: Request, private response: Response) {}
 ```
 
-## URL Parameters
+### Route Parameters
 
-% You can get matched URL parameters:
+% You can get matched route URL parameters:
 
 ```
 @Get('/users/:id')
@@ -46,7 +48,7 @@ public show(): string {
 const { name } = this.request.query // 'user1'
 ```
 
-## Form Input Data
+### Form Input Data
 
 % To retrieve and process incoming form data, use the `request.data` getter:
 
@@ -77,7 +79,7 @@ axios.post('/users', data)
 axios.delete('/users', data)
 ```
 
-## Redirects
+### Redirects
 
 % Example redirect response using the `redirect` method:
 
@@ -90,7 +92,7 @@ public index(): RedirectResponse {
 }
 ```
 
-## Headers
+### Headers
 
 % You can also write response headers:
 
@@ -98,10 +100,25 @@ public index(): RedirectResponse {
 this.response.header('x-custom-header', 'content')
 ```
 
-## Cookies
+### Cookies
 
-You may want to get cookies sent by the user. Framework makes is super easy:
+% You may want to get cookies sent by the user. Framework makes is super easy:
 
 ```
 const { sessionId } = this.request.cookies
 ```
+
+### Browser Language
+
+% Melonly lets you to easly obtain user browser's language:
+
+```
+// 'pl', 'en', etc.
+const language = this.request.lang()
+```
+
+% Read more about localization [here](/docs/1.x/localization).
+
+## Session
+
+% Melonly provides a powerful built-in session system. Read more in [session docs](/docs/1.x/session).
