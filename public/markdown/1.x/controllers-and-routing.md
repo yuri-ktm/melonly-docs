@@ -16,7 +16,7 @@
 
 % Basically, a controller is just a class with some methods which handles incoming web requests. Each controller should contain decorated methods which register app routes. In the controller above we have one registered route `/`. When the user enters `/` URL, the request will be passed to the `index` method which returns a view with passed variable.
 
-% Framework already ships with one controller in `src/modules/app/app.controller.ts` file by default:
+% Framework already ships with one controller in `src/modules/app.controller.ts` file by default:
 
 ```
 import { Controller, Get, Request, Response, ViewResponse } from '@melonly/core'

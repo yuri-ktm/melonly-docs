@@ -4,7 +4,7 @@
 - [Introduction](#introduction)
 - [Setting App Language](#setting-app-language)
 - [Translations](#translations)
-- [View Translations](#view-translations)
+  - [View Translations](#view-translations)
 
 ## Introduction
 
@@ -15,7 +15,9 @@
 % You can set the default app language in `src/config/config.ts` file:
 
 ```
-language: 'en',
+app: {
+  language: 'en',
+}
 ```
 
 % To change app locale during the request, use the `Lang` interface:
@@ -50,7 +52,7 @@ const message = trans('Hello World')
 }
 ```
 
-## View Translations
+### View Translations
 
 % You can also display translated text directly in view templates using `trans` function:
 

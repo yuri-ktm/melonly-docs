@@ -70,7 +70,7 @@
   import axios from 'axios'
 
   const menuItems = [
-    'Installation',
+    'Getting Started',
     'Directory Structure',
     'Configuration',
     'Controllers and Routing',

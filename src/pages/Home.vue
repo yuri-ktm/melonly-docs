@@ -7,7 +7,7 @@
     <div class="mb-20 md:mb-28">
       <RouterLink
         class="bg-gradient-to-r from-emerald-500 to-teal-500 inline-block cursor-pointer text-base px-4 md:px-6 py-3 rounded-xl text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-1 select-none shadow-lg shadow-emerald-500/20 outline-none focus-visible:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-gray-900 focus-visible:ring-emerald-400"
-        :to="`/docs/${DEFAULT_VERSION}/installation`"
+        :to="`/docs/${DEFAULT_VERSION}/getting-started`"
       >
         Get Started
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

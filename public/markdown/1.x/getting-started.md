@@ -1,18 +1,15 @@
 <!-- omit in toc -->
-# Installation
+# Getting Started
 
-- [Getting Started](#getting-started)
+- [Melonly Node.js Framework](#melonly-nodejs-framework)
 - [Requirements](#requirements)
+- [Installation](#installation)
 - [Creating Project](#creating-project)
 - [Running the Application](#running-the-application)
 
-## Getting Started
+## Melonly Node.js Framework
 
-% To create new Melonly project you can use the CLI installer. You only have to install `@melonly/cli` package:
-
-```
-<span class="select-none mr-2">$</span>npm install -g @melonly/cli
-```
+% Melonly is a fast and modern web development framework for Node.js. It makes it easy to create secure and fast web applications with awesome developer experience.
 
 ## Requirements
 
@@ -21,16 +18,23 @@
 - Node.js v15+
 - [`npm`](https://nodejs.org/en/download/) and [`git`](https://git-scm.com) installed
 
-## Creating Project
+## Installation
 
-% After installing, you can check the Melonly CLI version if it has been properly installed:
+% First, you only have to install `@melonly/cli` package before creating your first project:
+
+```
+<span class="select-none mr-2">$</span>npm install -g @melonly/cli
+```
+
+% You can check the Melonly CLI version when it has been properly installed and you'll be able to run `melon` commands.
 
 ```
 <span class="select-none mr-2">$</span>melon -v
 ```
 
-% Then you'll be able to run `melon` commands.
-% To create new project run the `new` command in your directory:
+## Creating Project
+
+% To create new Melonly project you can use the CLI. Just run the `new` command in your directory:
 
 ```
 <span class="select-none mr-2">$</span>melon new &lt;project-name&gt;
