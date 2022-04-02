@@ -84,6 +84,7 @@
     'Websockets and Broadcasting',
     'Command Line Interface',
     'Testing',
+    'Deployment',
   ]
 
   const route = useRoute()

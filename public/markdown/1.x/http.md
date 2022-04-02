@@ -22,7 +22,7 @@
 ```
 import { Request, Response } from '@melonly/core'
 
-// In controller's constructor
+// Controller's constructor
 constructor(private request: Request, private response: Response) {}
 ```
 
@@ -42,8 +42,8 @@ public show(): string {
 % You can also get URL query string entries:
 
 ```
-// Route: /search?query=user1
-const { query } = this.request.query // 'user1'
+// Route: /search?name=user1
+const { name } = this.request.query // 'user1'
 ```
 
 ## Form Input Data
@@ -59,7 +59,7 @@ public create(): RedirectResponse {
 
   this.userService.saveToDatabase(username, password)
 
-  // ...
+  ...
 }
 ```
 

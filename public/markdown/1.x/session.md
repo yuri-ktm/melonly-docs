@@ -18,7 +18,7 @@
 ```
 import { Session } from '@melonly/core'
 
-// In controller's constructor
+// Controller's constructor
 constructor(private session: Session) {}
 ```
 

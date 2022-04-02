@@ -3,6 +3,7 @@
 
 - [Introduction](#introduction)
 - [`/database`](#database)
+- [`/lang`](#lang)
 - [`/public`](#public)
 - [`/src`](#src)
 - [`/storage`](#storage)
@@ -16,6 +17,10 @@
 ## `/database`
 
 % In this directory database migrations are created by default. You may also store SQLite database there if you feel it convenient.
+
+## `/lang`
+
+% This directory does not exist by default, but you can create it and host your app [translation](/docs/1.x/localization) files inside it.
 
 ## `/public`
 

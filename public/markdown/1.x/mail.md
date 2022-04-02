@@ -15,7 +15,7 @@
 % All configuration needed for mailing is stored in the `.env` variables:
 
 ```
-MAIL_ADDRESS=example@mail.com
+MAIL_ADDRESS=example@email.com
 MAIL_SERVICE=gmail
 MAIL_PASSWORD=
 ```
@@ -61,5 +61,5 @@ export class WelcomeEmail extends Email {
 ```
 import { WelcomeEmail } from '../mail/welcome.email'
 
-Email.send('recipient@mail.com', new WelcomeEmail())
+Email.send('recipient@email.com', new WelcomeEmail())
 ```

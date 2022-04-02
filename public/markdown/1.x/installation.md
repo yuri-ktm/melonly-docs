@@ -4,7 +4,7 @@
 - [Getting Started](#getting-started)
 - [Requirements](#requirements)
 - [Creating Project](#creating-project)
-- [Running Application](#running-application)
+- [Running the Application](#running-the-application)
 
 ## Getting Started
 
@@ -16,10 +16,10 @@
 
 ## Requirements
 
-% In order to use Melonly, your environment has to satisfy these requirements:
+% In order to use Melonly, your environment has to met few requirements:
 
-- Node.js 15+
-- [`npm`](https://nodejs.org/en/download/) installed
+- Node.js v15+
+- [`npm`](https://nodejs.org/en/download/) and [`git`](https://git-scm.com) installed
 
 ## Creating Project
 
@@ -36,7 +36,7 @@
 <span class="select-none mr-2">$</span>melon new &lt;project-name&gt;
 ```
 
-## Running Application
+## Running the Application
 
 % Once your project has been created you can start it on the local server using `npm start`:
 
