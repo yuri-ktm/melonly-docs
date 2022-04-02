@@ -110,7 +110,7 @@ const { sessionId } = this.request.cookies
 
 ### Browser Language
 
-% Melonly lets you to easly obtain user browser's language:
+% Melonly lets you to easly get user browser's language:
 
 ```
 // 'pl', 'en', etc.

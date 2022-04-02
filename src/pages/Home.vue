@@ -1,5 +1,5 @@
 <template>
-  <section class="flex relative flex-col justify-center items-center w-full h-[calc(100vh-4rem)] md:h-[calc(100vh-17rem)] dark:bg-gray-800/60 p-5 md:py-32 md:px-48">
+  <section class="flex relative flex-col justify-center items-center w-full h-[calc(100vh-4rem)] md:h-[calc(100vh-17rem)] dark:bg-gray-800/60 overflow-x-hidden p-5 md:py-32 md:px-48">
     <h1 class="text-4xl font-bold font-nunito md:text-5xl text-center tracking-wide mb-10">
       The <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">modern</span> Node.js framework
     </h1>
@@ -43,7 +43,7 @@
   </section>
 
   <section class="flex flex-col justify-center items-center w-full h-screen md:h-[calc(100vh-12rem)] bg-gray-900 text-gray-50 p-6 md:py-20 md:px-48">
-    <h2 class="text-3xl font-nunito font-bold mb-8"><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Awesome</span> developer experience</h2>
+    <h2 class="text-3xl font-nunito font-medium mb-8"><span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Awesome</span> developer experience</h2>
 
     <p class="opacity-90 text-lg mb-10">Melonly focuses on elegant and simple syntax which scales well in larger projects.</p>
 
@@ -56,9 +56,9 @@
   </section>
 
   <section class="flex flex-col justify-center items-center w-full h-screen md:h-[calc(100vh-24rem)] dark:bg-gray-800/60 p-6 md:py-20 md:px-48">
-    <h2 class="text-3xl font-nunito font-bold mb-12"><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Why</span> should you try Melonly?</h2>
+    <h2 class="text-3xl font-nunito font-medium mb-12"><span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Why</span> should you try Melonly?</h2>
 
-    <div class="bg-slate-50 dark:bg-gray-900 flex items-center rounded-lg p-4 mb-5">
+    <div class="bg-slate-50 dark:bg-gray-900 flex items-center rounded-xl shadow-sm dark:shadow-lg p-4 mb-5">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
       </svg>
@@ -66,7 +66,7 @@
       <span class="opacity-90">Elegant code</span>
     </div>
 
-    <div class="bg-slate-50 dark:bg-gray-900 flex items-center rounded-lg p-4 mb-5">
+    <div class="bg-slate-50 dark:bg-gray-900 flex items-center rounded-xl shadow-sm dark:shadow-lg p-4 mb-5">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
       </svg>
@@ -74,7 +74,7 @@
       <span class="opacity-90">Routing, authentication & more</span>
     </div>
 
-    <div class="bg-slate-50 dark:bg-gray-900 flex items-center rounded-lg p-4 mb-5">
+    <div class="bg-slate-50 dark:bg-gray-900 flex items-center rounded-xl shadow-sm dark:shadow-lg p-4 mb-5">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-emerald-400 mr-2" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
       </svg>
@@ -83,7 +83,7 @@
     </div>
   </section>
 
-  <footer class="flex flex-col justify-center items-center w-full h-96 bg-gray-900 dark:bg-gray-900 text-center text-gray-50 p-3 md:py-32">
+  <footer class="flex flex-col justify-center items-center w-full h-96 bg-gray-900 dark:bg-gray-900 text-center text-gray-50 p-2 md:p-3 md:py-32">
     <p class="opacity-80 mb-3">Copyright © 2022 Dominik Rajkowski</p>
 
     <p class="opacity-80">Melonly.js open-source framework is licensed under <a class="text-emerald-500 dark:text-emerald-400 hover:border-b border-emerald-500" href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
